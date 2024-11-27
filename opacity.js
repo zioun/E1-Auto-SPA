@@ -37,6 +37,26 @@ window.addEventListener("scroll", () => {
     textTitle.style.opacity = "0";
     textImg.style.transition = "opacity 0.5s ease"; // Smooth transition
     textImg.style.opacity = "0";
+  } else if (scrollPosition >= 400) {
+    textTitle.style.transition = "opacity 0.5s ease"; // Smooth transition
+    textTitle.style.opacity = "0.1";
+    textImg.style.transition = "opacity 0.5s ease"; // Smooth transition
+    textImg.style.opacity = "0.1";
+  } else if (scrollPosition >= 300) {
+    textTitle.style.transition = "opacity 0.5s ease"; // Smooth transition
+    textTitle.style.opacity = "0.3";
+    textImg.style.transition = "opacity 0.5s ease"; // Smooth transition
+    textImg.style.opacity = "0.3";
+  } else if (scrollPosition >= 200) {
+    textTitle.style.transition = "opacity 0.5s ease"; // Smooth transition
+    textTitle.style.opacity = "0.5";
+    textImg.style.transition = "opacity 0.5s ease"; // Smooth transition
+    textImg.style.opacity = "0.5";
+  } else if (scrollPosition >= 100) {
+    textTitle.style.transition = "opacity 0.5s ease"; // Smooth transition
+    textTitle.style.opacity = "0.7";
+    textImg.style.transition = "opacity 0.5s ease"; // Smooth transition
+    textImg.style.opacity = "0.7";
   } else {
     textTitle.style.transition = "opacity 0.5s ease"; // Smooth transition
     textTitle.style.opacity = "1";
@@ -44,8 +64,20 @@ window.addEventListener("scroll", () => {
     textImg.style.opacity = "1";
   }
 
-  // Fade in textPara smoothly at 700px
-  if (scrollPosition >= 700) {
+   // Fade in textPara step by step
+  if (scrollPosition >= 1100 && scrollPosition < 1200) {
+    textPara.style.transition = "opacity 0.5s ease"; // Smooth transition
+    textPara.style.opacity = "0.1";
+  } else if (scrollPosition >= 1200 && scrollPosition < 1300) {
+    textPara.style.transition = "opacity 0.5s ease"; // Smooth transition
+    textPara.style.opacity = "0.3";
+  } else if (scrollPosition >= 1300 && scrollPosition < 1400) {
+    textPara.style.transition = "opacity 0.5s ease"; // Smooth transition
+    textPara.style.opacity = "0.5";
+  } else if (scrollPosition >= 1400 && scrollPosition < 1500) {
+    textPara.style.transition = "opacity 0.5s ease"; // Smooth transition
+    textPara.style.opacity = "0.7";
+  } else if (scrollPosition >= 1500) {
     textPara.style.transition = "opacity 0.5s ease"; // Smooth transition
     textPara.style.opacity = "1";
   } else {
@@ -53,9 +85,6 @@ window.addEventListener("scroll", () => {
     textPara.style.opacity = "0";
   }
 });
-
-  
-  
 
 const fixedBanner = document.querySelector("#fixed-banner");
 
@@ -78,4 +107,3 @@ window.addEventListener("scroll", () => {
     fixedBanner.style.marginTop = "0px"; // Smoothly reset
   }
 });
-

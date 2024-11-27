@@ -61,17 +61,18 @@ body {
 }
 
 .left-side h1 {
-  font-size: 14px;
+  font-size: 16px;
   color: white;
   font-weight: 100;
   text-transform: uppercase;
   word-spacing: 2px;
   letter-spacing: 7px;
   margin-top: 90px;
+  opacity: 0.9;
 }
 
 .left-side h2 {
-  font-size: 110px;
+  font-size: 115px;
   color: white;
   text-transform: uppercase;
   word-spacing: 10px;
@@ -80,6 +81,7 @@ body {
   margin-top: 0px;
   width: 800px;
   margin-left: -7px;
+  opacity: 0.9;
 }
 
 .left-side h4 {
@@ -87,12 +89,13 @@ body {
   top: 0;
   left: 0;
   font-size: 40px;
-  max-width: 765px;
+  max-width: 818px;
   color: #666975;
   margin-top: 10%;
   font-weight: normal;
   transition: opacity 0.5s ease; /* Smooth transition */
   line-height: 60px;
+  margin-top: 170px;
 }
 .left-side h4 span {
   font-weight: normal;
