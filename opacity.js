@@ -24,7 +24,7 @@ window.addEventListener("scroll", () => {
   } else {
     // Calculate opacity and width for img and svg for larger screens
     const opacity = Math.max(0, 1 - scrollPosition / 900); // Fade out gradually
-    const width = Math.min(75, 65 + scrollPosition / 260); // Gradually increase width
+    const width = Math.min(75, 72 + scrollPosition / 260); // Gradually increase width
 
     img.style.opacity = opacity;
     img.style.setProperty("width", `${width}%`, "important");
