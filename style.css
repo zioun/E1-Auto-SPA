@@ -121,7 +121,7 @@ body {
   position: relative;
 }
 
-@media (max-width: 1300px) {
+@media (max-width: 1440px) {
   .container {
     width: 970px;
   }
